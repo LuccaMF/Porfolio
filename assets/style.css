@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'Fira Sans',  Helvetica, sans-serif, Arial, sans-serif;
+}
+
+html, body {
+    font-size: 62.5%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(88, 177, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    user-select: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    background: transparent;
+    z-index: 100;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 40px; */
+}
+
+.nav a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3.7rem;
+    text-decoration: none;
+    cursor: default;
+    font-weight: 600;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover  {
+    color: rgb(0, 136, 255);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 10% 0;
+    color: rgb(31, 31, 31);
+}
+
+.imgperfil {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 70vh;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 2s, 3s;
+}
+ 
+.imgperfil img {
+    max-width: 700px;
+}
+
+.home-content h1 {
+    font-size: 5.4rem;
+    line-height: 5rem;
+    animation: slideRight 1s ease-in forwards;
+}
+
+.home-content h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.home-content span {
+    color: rgb(0, 136, 255);
+}
+
+.socialmedia a {
+    display: inline-flex;
+    color: rgb(0, 136, 255);
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 136, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 40px 0px 0;
+    font-size: 2rem;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.socialmedia a:hover {
+    background: rgb(0, 136, 255);
+    color: rgb(253, 253, 253);
+    box-shadow: 0 0 20px rgb(0, 136, 255);
+}
+
+#downloadBtn {
+    font-size: 1.4rem;
+    display: inline-block;
+    background-color: rgb(0, 136, 255);
+    border-radius: 40px;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 8%;
+    margin-left: 11%;
+    box-shadow: 0 0 30px rgb(0, 136, 255);
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    transition-duration: 0.3s;
+}
+
+#downloadBtn:hover {
+    box-shadow: 0 0 30px rgb(0, 64, 119);
+}
+
+/*Animação*/
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY();
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY();
+    }
+}
