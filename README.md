@@ -5,7 +5,7 @@ Este é o código-fonte do meu site, criado com HTML, CSS e JavaScript. O site p
 ## Funcionalidades
 
 Design responsivo com media queries.
-Menu hambúrguer para navegação em dispositivos móveis.
+Menu "hambúrguer" para navegação em dispositivos móveis.
 Animações CSS.
 Em breve, serão adicionadas as seguintes seções:
 
