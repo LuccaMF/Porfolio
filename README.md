@@ -30,7 +30,7 @@ Para executar o site localmente, siga os seguintes passos:
 - Clone este repositório na sua máquina local.
 - Abra o arquivo index.html em um navegador da web.
 
-Ou
+Ou clique aqui --> luccamf.github.io/Portfolio/
 
 
 ## Contribuições ✍️
