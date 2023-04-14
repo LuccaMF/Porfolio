@@ -133,7 +133,7 @@
     .menu-section.on .menu-toggle {
         position: absolute;
         top: 20px;
-        right: 3%;
+        right: 4%;
     }
 
     .menu-section.on .menu-toggle .one {
@@ -173,7 +173,12 @@
     }
 
     #downloadBtn {
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .socialmedia {
+        width: 90%;
     }
 
     .socialmedia a  {
