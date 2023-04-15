@@ -1,8 +1,3 @@
-// var downloadBtn = document.getElementById("downloadBtn");
-// downloadBtn.addEventListener("click", function() {
-//     window.location = "/assets/docs/Curriculo.pdf";
-// });
-
 var typed = new Typed (".typedText", {
     strings: ["desenvolvedor Front-End."],
     typeSpeed: 100,
